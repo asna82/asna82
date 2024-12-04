@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://cbokv16vtioxn"]
+
+[ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_0pmdd"]
+[ext_resource type="PackedScene" uid="uid://lsn57cyvo76f" path="res://pinetree.tscn" id="2_nnums"]
+[ext_resource type="PackedScene" uid="uid://ogik4s70pgwl" path="res://characters/slime/slime.tscn" id="3_v50ob"]
+[ext_resource type="PackedScene" uid="uid://ba0ngjnjvy6ka" path="res://PLAYER.tscn" id="4_ck0l7"]
+[ext_resource type="PackedScene" uid="uid://bx1h1k7t1bs04" path="res://SLIME.tscn" id="5_hkd8c"]
+
+[node name="GAME" type="Node2D"]
+y_sort_enabled = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 1564.0
+offset_top = -203.0
+offset_right = 3823.0
+offset_bottom = 870.0
+
+[node name="HappyBoo" parent="." instance=ExtResource("1_0pmdd")]
+y_sort_enabled = true
+position = Vector2(401, 44)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_nnums")]
+position = Vector2(847, 193)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_nnums")]
+position = Vector2(1040, 190)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_nnums")]
+position = Vector2(341, 40)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("2_nnums")]
+position = Vector2(939, 288)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("2_nnums")]
+position = Vector2(484, 52)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("2_nnums")]
+position = Vector2(409, 128)
+
+[node name="HappyBoo2" parent="." instance=ExtResource("1_0pmdd")]
+position = Vector2(3160, 1051)
+
+[node name="Slime" parent="." instance=ExtResource("3_v50ob")]
+position = Vector2(1915, 242)
+
+[node name="PLAYER" parent="." instance=ExtResource("4_ck0l7")]
+unique_name_in_owner = true
+position = Vector2(2568, 283)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("2_nnums")]
+position = Vector2(2157, 12)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("2_nnums")]
+position = Vector2(2320, 17)
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("2_nnums")]
+position = Vector2(2907, 151)
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("2_nnums")]
+position = Vector2(2819, 218)
+
+[node name="StaticBody2D11" parent="." instance=ExtResource("2_nnums")]
+position = Vector2(2997, 222)
+
+[node name="StaticBody2D12" parent="." instance=ExtResource("2_nnums")]
+position = Vector2(2907, 317)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("5_hkd8c")]
+position = Vector2(2372, 330)
